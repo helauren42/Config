@@ -1,0 +1,29 @@
+*
+
+# git files
+!.gitignore
+!README.md
+
+# WM
+!niri/**
+
+# Layout
+!waybar/**
+!waypaper/**
+!wlogout/**
+
+# Terminals && File Managers
+!kitty/**
+!wezterm/**
+!ghostty/**
+!yay/**
+
+# File Manager
+!dolphin/**
+
+# Nvim
+!nvim/**
+
+# Others
+!clipse/**
+
