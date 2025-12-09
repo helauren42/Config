@@ -1,0 +1,13 @@
+font-family = FiraCode Nerd Font SemBd
+font-size = 18
+
+
+foreground = #CDD6F4
+background = #000000
+cursor-color = #F5E0DC
+
+mouse-hide-while-typing = true
+background-opacity = 0.5
+
+window-show-tab-bar = never
+gtk-titlebar = false

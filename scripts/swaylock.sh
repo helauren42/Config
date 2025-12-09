@@ -1,0 +1,30 @@
+niri msg action do-screen-transition --delay-ms 300 &&
+  swaylock \
+    --clock \
+    --screenshots \
+    --daemonize \
+    --ignore-empty-password \
+    --font "JetBrains Bold" \
+    --indicator \
+    --indicator-radius 150 \
+    --effect-scale 0.4 \
+    --effect-vignette 0.2:0.5 \
+    --effect-blur 4x2 \
+    --datestr "%A, %b %d" \
+    --timestr "%k:%M" \
+    --key-hl-color 89b4faf2 \
+    --ring-color 89b4faf2 \
+    --text-color cdcecfef \
+    --inside-color 1e1e2eec \
+    --inside-clear-color 313244f2 \
+    --ring-clear-color 89b4faf2 \
+    --text-clear-color cdcecfef \
+    --inside-ver-color 313244f2 \
+    --ring-ver-color 89b4faf2 \
+    --text-ver-color cdcecfef \
+    --bs-hl-color 313244ff \
+    --inside-wrong-color f38ba8ff \
+    --ring-wrong-color f38ba8ff \
+    --text-wrong-color cdcecfff \
+    --line-color 45475a \
+    --separator-color 45475a

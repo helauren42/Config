@@ -1,0 +1,6 @@
+/* Colors */
+@define-color bg-primary rgba(41, 44, 60, 0.5);
+@define-color primary #bd93f9;
+@define-color accent #b4befe;
+@define-color error #f38ba8;
+@define-color info #89b4fa;

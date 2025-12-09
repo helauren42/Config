@@ -1,0 +1,48 @@
+#waybar {
+  background-color: rgba(220, 180, 135, 1);
+  color: rgb(105, 70, 35);
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+#workspaces {
+  padding-left: 3rem;
+}
+
+#workspaces button {
+  border-radius: 1.3rem;
+}
+
+#workspaces button.active {
+  color: rgb(115, 60, 20);
+  background-color: bisque;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#mpd,
+#bluetooth,
+#custom-spotify,
+#custom-weather,
+#custom-screenshot_t,
+#custom-power,
+#tray,
+#custom-storage {
+  /* background-color: rgba(28, 27, 26, 0.8); */
+  border-radius: 15px;
+  padding: 0.8rem 0.8rem;
+}
+
+#custom-power {
+  padding-right: 3rem;
+}

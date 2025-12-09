@@ -1,0 +1,173 @@
+@import "colors.css";
+
+* {
+  border: none;
+  border-radius: 10;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 15px;
+  min-height: 5px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+/* Common widget styling */
+#network,
+#cava,
+#battery,
+#backlight,
+#language,
+#pulseaudio,
+#clock,
+#disk,
+#privacy,
+#idle_inhibitor,
+#memory,
+#cpu,
+#tray,
+#tray menu {
+  margin-top: 5px;
+  margin-left: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition: none;
+  background: @bg-primary;
+  color: @primary;
+  border-style: solid;
+  border-color: @primary;
+  transition: 0.3s;
+}
+
+#network:hover,
+#cava:hover,
+#battery:hover,
+#backlight:hover,
+#language:hover,
+#clock:hover,
+#disk:hover,
+#privacy:hover,
+#memory:hover,
+#cpu:hover,
+#tray:hover {
+  color: @bg-primary;
+  background: @primary;
+}
+
+#network.disconnected {
+  color: @error;
+  background: @bg-primary;
+  border-color: @error;
+}
+
+#network.disconnected:hover {
+  background: @error;
+  color: @bg-primary;
+}
+
+#pulseaudio:hover {
+  background: @error;
+  color: @bg-primary;
+}
+
+#pulseaudio.muted {
+  color: @error;
+  background: @bg-primary;
+  border-color: @error;
+}
+
+#pulseaudio.muted:hover {
+  color: @bg-primary;
+  background: @primary;
+}
+
+#idle_inhibitor.activated {
+  color: @info;
+  border-color: @info;
+}
+
+#idle_inhibitor.activated:hover {
+  background: @info;
+  color: @bg-primary;
+  border-color: @info;
+}
+
+#idle_inhibitor.deactivated:hover {
+  color: @bg-primary;
+  background: @primary;
+}
+
+#custom-launcher {
+  margin-top: 5px;
+  margin-left: 17px;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-radius: 10px;
+  transition: none;
+  color: @primary;
+  background: @bg-primary;
+  transition: 0.3s;
+  border-style: solid;
+  border-color: @primary;
+}
+
+#custom-launcher:hover {
+  background: @primary;
+  color: @bg-primary;
+}
+
+#custom-power,
+#custom-lock {
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 17px;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition: none;
+  background: @bg-primary;
+  color: @primary;
+  border-style: solid;
+  border-color: @primary;
+  transition: 0.3s;
+}
+
+#custom-power {
+  font-size: 22px;
+}
+
+#custom-lock:hover,
+#custom-power:hover {
+  background: @error;
+  color: @bg-primary;
+  border-color: @error;
+}
+
+#workspaces {
+  margin-top: 5px;
+  margin-left: 8px;
+  padding-right: 4px;
+  background: @bg-primary;
+  border-style: solid;
+  border-color: @primary;
+  color: @primary;
+  transition: 0.3s;
+}
+
+#workspaces button {
+  color: @primary;
+  transition: 0.3s;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  color: transparent;
+}
+
+#workspaces button.active {
+  color: @accent;
+  transition: 0.3s;
+}
