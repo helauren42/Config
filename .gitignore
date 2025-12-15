@@ -25,5 +25,7 @@
 !nvim/**
 
 # Others
-!clipse/**
-
+!./clipse/
+!./clipse/config.json
+!./clipse/custom_theme.json
+!fuzzel

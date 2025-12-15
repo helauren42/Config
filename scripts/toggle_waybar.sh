@@ -1,5 +1,5 @@
 if pgrep -x waybar; then
-	pkill waybar
+  pkill waybar
 else
-	waybar &
+  waybar
 fi

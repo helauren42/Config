@@ -1,21 +1,25 @@
 {
+
     "label" : "lock",
     "action" : "exec ~/.config/scripts/swaylock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
+
 {
     "label" : "hibernate",
     "action" : "systemctl hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }
+
 {
     "label" : "logout",
-    "action" : "niri msg action quit -s",
-    "text" : "Logout",
-    "keybind" : "e"
+    "action" : "mmsg -q",
+    "text" : " Logout  ",
+    "keybind" : "m"
 }
+
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
