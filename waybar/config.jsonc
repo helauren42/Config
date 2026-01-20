@@ -40,9 +40,9 @@
     "backlight": {
         "device": "amdgpu_bl1",
         "format": "{icon} {percent}%",
-	"format-alt": "{icon}",
-	"tooltip": false,
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-alt": "{icon}",
+	// "tooltip": false,
+	//        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "interval": 30,
