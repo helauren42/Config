@@ -1,0 +1,23 @@
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, desc = "nvim" },
+]
+open = [
+    { run = 'nemo "$1"', desc = "Open", for = "linux" },
+]
+play = [
+    { run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
+]
+
+[open]
+# Directory rule — added at the very beginning
+prepend_rules = [
+    { mime = "inode/directory", use = ["edit"] },
+]
+
+# Your file rules — added after the built-in defaults
+append_rules = [
+    { mime = "text/*", use = ["edit"] },
+    { mime = "application/{json,ndjson}", use = ["edit"] },
+    { mime = "{audio,video}/*", use = ["play"] },
+]
