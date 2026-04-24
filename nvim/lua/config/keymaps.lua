@@ -9,6 +9,8 @@ vim.cmd([[let @d = "o<div>\ei className=\"\"\ei"]])
 vim.api.nvim_set_keymap("n", "<F5>", "@i", { noremap = true, silent = false })
 vim.cmd([[let @i = "o<div>\ei id=\"\"\ei"]])
 
+vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
+
 -- quit file
 -- vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
 
